@@ -224,7 +224,8 @@ nav ul {
 /*--/mid--*/
 
 .mid-section {
-  margin-top: 5px;
+  margin-top: 45px;
+  margin-bottom: -150px;
 }
 
 .bottom-w3pvt-left {
@@ -263,7 +264,7 @@ h4.text-w3pvt {
 .instagram {
   border: #000000;
   border-radius: 2px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .instagram h4 {
@@ -292,6 +293,9 @@ h4.text-w3pvt {
 
 /*productos*/
 
+.col{
+
+}
 
 .txt-productos{
 
@@ -299,5 +303,8 @@ h4.text-w3pvt {
   margin-bottom: 15px;
   text-align: center;
 }
+
+/* Sobre nosotros */
+
 
 
