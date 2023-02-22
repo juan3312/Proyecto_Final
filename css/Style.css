@@ -39,11 +39,13 @@ nav ul {
   margin-right: auto;
   max-width: 100%;
   text-align: center;
+  overflow: hidden;
 }
 
 .carousel img {
-  height: 450px;
-  background-size: cover;
+  height: 350px;
+  display: block;
+  object-fit: cover;
 }
 
 .card-group {
@@ -287,3 +289,4 @@ h4.text-w3pvt {
 }
 
 /*Fin Index*/
+
