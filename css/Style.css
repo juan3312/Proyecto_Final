@@ -58,50 +58,50 @@ nav ul {
 
 /*--about--*/
 .ab-content-img {
-    background: url(../img/banner1.jpg) no-repeat center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    min-height: 27em;
+  background: url(../img/banner1.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  min-height: 27em;
 }
 
 .title-wthree,
 .title-wthree.two {
-    font-size: 2.5em;
-    text-transform: uppercase;
-    color: #333;
-    margin-bottom: 0.7em;
-    font-weight: 600;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 0.7em;
+  font-weight: 600;
 }
 
 .title-wthree.two {
-    color: #fff;
+  color: #fff;
 }
 
 .ab-content h4 {
-    font-size: 1.2em;
-    color: #4c4d4e;
-    margin: 2em 0 1em 0;
-    text-transform: uppercase;
-    font-weight: 600;
+  font-size: 1.2em;
+  color: #4c4d4e;
+  margin: 2em 0 1em 0;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .ab-info-con {
-    padding: 0 0.5em;
+  padding: 0 0.5em;
 }
 
 .ab-info-con.ab-inf-page h4 {
-    font-size: 1.4em;
-    color: #4c4d4e;
-    margin: 0em 0 1.2em 0;
-    text-transform: uppercase;
-    font-weight: 600;
+  font-size: 1.4em;
+  color: #4c4d4e;
+  margin: 0em 0 1.2em 0;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .ab-info-con.ab-inf-page {
-    margin-top: 7em;
+  margin-top: 7em;
 }
 
 /*--//about--*/
@@ -282,10 +282,10 @@ h4.text-w3pvt {
 
 /* text header*/
 
-.banner-bottom-py-5{
+.banner-bottom-py-5 {
 
   background-color: rgba(187, 187, 187, 0.274);
-  
+
 
 }
 
@@ -293,7 +293,7 @@ h4.text-w3pvt {
 
 /*productos*/
 
-.txt-productos{
+.txt-productos {
 
   margin-top: 15px;
   margin-bottom: 15px;
@@ -301,5 +301,64 @@ h4.text-w3pvt {
 }
 
 /* Sobre nosotros */
+.card {
+  max-height: 150px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+  transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+}
 
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
 
+.card h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card img {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  max-height: 120px;
+}
+
+.card-1 {
+  background-image: url(https://icons.iconarchive.com/icons/pictogrammers/material-light/256/cart-icon.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80px;
+}
+
+.card-2 {
+  background-image: url(https://icons.iconarchive.com/icons/iconsmind/outline/256/Clothing-Store-icon.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80px;
+}
+
+.card-3 {
+  background-image: url(https://icons.iconarchive.com/icons/pictogrammers/material-light/256/truck-icon.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80px;
+}
+
+@media(max-width: 990px) {
+  .card {
+    margin: 20px;
+  }
+}
+
+.ab-info-con-1 {
+  margin-top: 100px;
+}
+
+.banner-bottom img {
+  border-radius: 50px;
+}

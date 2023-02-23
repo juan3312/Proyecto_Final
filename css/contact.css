@@ -3,7 +3,28 @@ body{
 	font-family: "Roboto", Helvetica, Arial, Verdana, sans-serif;
 	background: #fff;
   margin: 0;
-  paddign: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #b7b7b725;
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav img {
+  max-width: 180px;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: start;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #74d2e7;
 }
 
 /* Style for text
@@ -42,7 +63,13 @@ textarea {
 	position: relative;
 	}
 }
-
+#section iframe{
+  border-radius: 50px;
+}
+#section h3{
+  color: #097cda;
+  margin-bottom: 25px;
+}
 
 #section h2{
 	margin-bottom: 50px;
@@ -81,10 +108,7 @@ textarea {
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-}
-.contact-form .input-block.focus {
-  
-}
+}  
 .contact-form .input-block.textarea {
   height: auto;
 }

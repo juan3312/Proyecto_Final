@@ -56,3 +56,8 @@ const aparecerImagen = (imagen) =>{
 	
 });
  /* fin contact*/
+
+ /* about */
+
+
+ /* fin about */
