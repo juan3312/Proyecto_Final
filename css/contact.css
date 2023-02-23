@@ -223,3 +223,24 @@ textarea {
   margin-top: 10px;
   color: #ff7c62;
 }
+
+.text-center{
+  margin-top: 50px;
+}
+
+.link{
+  background-color: #b3b3b3;
+  color: rgb(68, 68, 68);
+  padding-top: 20px;
+  margin-bottom: -5%;
+}
+
+.text-center h3{
+  color:rgb(68, 68, 68);
+  text-decoration-color: #000000;
+}
+
+.copy{
+  background-color: #b3b3b3;
+  margin-top: -5px;
+}
