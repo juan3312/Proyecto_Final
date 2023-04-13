@@ -48,123 +48,97 @@
 </nav>
 <!-- Fin Navmenu -->
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
 
- <!--/banner-bottom -->
- <div class="txt-productos">
-  <h3>Nuestros productos</h3>
-</div>
-  <div class="row row-cols-1 row-cols-md-5 g-4">
-    <div class="col">
-      <div class="card h-100">
-        <img src="../img/gorra-estampada.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Gorras planas</h5>
-          <p class="card-text">Gorras de modelo plano</p>
-          <h5>$70.000</h5>
-          <a href="https://api.whatsapp.com/send?phone=573014626980&text=Me%20gustaría%20saber%20mas%20sobre%20algunos%20de%20tus%20productos!!" class="btn btn-primary">Comprar</a>
+    <link rel="stylesheet" href="../estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Ecommerce</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-dark min-vw-100">
+        <h2 class="p-3 text-white">Ecommerce</h2>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              data-bs-toggle="modal"
+              data-bs-target="#modal"
+            >
+              <i class="bi bi-cart mx-5" id="carritoContenedor">0</i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="row mt-5" id="contenedor"></div>
+    </main>
+    
+
+    <div class="container-xl">
+      <div class="modal" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Carrito</h5>
+              <button
+                type="button"
+                class="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                Vaciar carrito
+              </button>
+              <button type="button" id="procesarCompra" class="btn btn-primary">
+                Continuar compra
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+
+              <span>Precio total:</span>
+              <p class="text-center" id="precioTotal"></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="../img/gorras-variadas.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Gorra Sencilla</h5>
-          <p class="card-text">Gorra sin diseño ni estampado</p>
-          <h5>$50.000</h5>
-          <a href="https://api.whatsapp.com/send?phone=573014626980&text=Me%20gustaría%20saber%20mas%20sobre%20algunos%20de%20tus%20productos!!" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="../img/zapatos1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Botas de cuero</h5>
-          <p class="card-text">Botas hechas de 100% cuero</p>
-          <h5>$350.000</h5>
-          <a href="https://api.whatsapp.com/send?phone=573014626980&text=Me%20gustaría%20saber%20mas%20sobre%20algunos%20de%20tus%20productos!!" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="../img/camisa4.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Camisa tipo polo</h5>
-          <p class="card-text">Camisa tipo polo color blanca</p>
-          <h5>$75.000</h5>
-          <a href="https://api.whatsapp.com/send?phone=573014626980&text=Me%20gustaría%20saber%20mas%20sobre%20algunos%20de%20tus%20productos!!" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="../img/camisa5.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Camisa estampada</h5>
-          <p class="card-text">Estampados de muchos diseños</p>
-          <h5>$50.000</h5>
-          <a href="https://api.whatsapp.com/send?phone=573014626980&text=Me%20gustaría%20saber%20mas%20sobre%20algunos%20de%20tus%20productos!!" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="../img/zapato2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Tennis Deportivos</h5>
-          <p class="card-text">para todo tipo de deportes</p>
-          <h5>$50.000</h5>
-          <a href="https://api.whatsapp.com/send?phone=573014626980&text=Me%20gustaría%20saber%20mas%20sobre%20algunos%20de%20tus%20productos!!" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="../img/reloj1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Reloj de Cuero</h5>
-          <p class="card-text">Hermoso reloj con correa de cuero</p>
-          <h5>$400.000</h5>
-          <a href="https://api.whatsapp.com/send?phone=573014626980&text=Me%20gustaría%20saber%20mas%20sobre%20algunos%20de%20tus%20productos!!" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="../img/reloj2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Reloj Rolex</h5>
-          <p class="card-text">Hermoso rolex metalico</p>
-          <h5>$850.000</h5>
-          <a href="https://api.whatsapp.com/send?phone=573014626980&text=Me%20gustaría%20saber%20mas%20sobre%20algunos%20de%20tus%20productos!!" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="../img/gafas1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a short card.</p>
-          <h5>$180.000</h5>
-          <a href="https://api.whatsapp.com/send?phone=573014626980&text=Me%20gustaría%20saber%20mas%20sobre%20algunos%20de%20tus%20productos!!" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="../img/anillos.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">his is a short card.</p>
-          <h5>$50.000</h5>
-          <a href="https://api.whatsapp.com/send?phone=573014626980&text=Me%20gustaría%20saber%20mas%20sobre%20algunos%20de%20tus%20productos!!" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-    </div>
-  </div>
+
+    <script src="../app.js"></script>
+    <script src="../bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!-- /banner-bottom -->
 
@@ -221,19 +195,19 @@
               Productos
             </h6>
             <p>
-              <a href="./pages/camisas.html" class="text-reset">Camisas</a>
+              <a href="./camisas.html" class="text-reset">Camisas</a>
             </p>
             <p>
-              <a href="./pages/pantalones.html" class="text-reset">Pantalones</a>
+              <a href="./pantalones.html" class="text-reset">Pantalones</a>
             </p>
             <p>
-              <a href="./pages/gorras.html" class="text-reset">Gorras</a>
+              <a href="./gorras.html" class="text-reset">Gorras</a>
             </p>
             <p>
-              <a href="./pages/zapatos.html" class="text-reset">Zapatos</a>
+              <a href="./zapatos.html" class="text-reset">Zapatos</a>
             </p>
             <p>
-              <a href="./pages/accesorios.html" class="text-reset">Accesorios</a>
+              <a href="./accesorios.html" class="text-reset">Accesorios</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -245,13 +219,13 @@
               Enlaces Utiles
             </h6>
             <p>
-              <a href="./index.html" class="text-reset">Inicio</a>
+              <a href="../index.html" class="text-reset">Inicio</a>
             </p>
             <p>
-              <a href="./pages/sobre-nosotros.html" class="text-reset">Sobre Nosotros</a>
+              <a href="./sobre-nosotros.html" class="text-reset">Sobre Nosotros</a>
             </p>
             <p>
-              <a href="./pages/contacto.html" class="text-reset">Contacto</a>
+              <a href="./contacto.html" class="text-reset">Contacto</a>
             </p>
           </div>
           <!-- Grid column -->
